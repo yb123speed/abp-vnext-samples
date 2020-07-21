@@ -5,10 +5,12 @@ namespace BasicConsoleSample
 {
     public class AppModule : AbpModule
     {
-        public override void ConfigureServices(ServiceConfigurationContext context)
-        {
-            context.Services.AddTransient<HelloAbpService>();
-            base.ConfigureServices(context);
-        }
+        #region DI 1
+        // public override void ConfigureServices(ServiceConfigurationContext context)
+        // {
+        //     context.Services.AddTransient<HelloAbpService>();
+        //     base.ConfigureServices(context);
+        // }
+        #endregion
     }
 }
